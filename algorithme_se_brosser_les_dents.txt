@@ -1,0 +1,36 @@
+Algorithme de pseudo-code :
+
+Fonction se brosser les dents :
+
+si tube de dentifrice vide ou pas de tube de dentifrice 
+alors
+  acheter nouveau tube de dentifrice
+fin si
+
+si brosse à dents trop abimée ou pas de brosse à dents 
+alors
+   acheter nouvelle brosse à dents
+fin si
+
+si verre abimé ou pas de verre 
+alors
+   acheter un verre
+fin si
+
+ouvrir tube de dentifrice
+laver brosser à dents
+mettre dentifrice sur brosse à dents
+
+laver verre
+remplir verre
+
+tant que dents sales
+faire
+  frotter plusieurs minutes dans la bouche la brosse à dents dans le sens vertical
+  frotter plusieurs minutes dans la bouche la brosse à dents dans le sens horizontal
+  rincer bouche avec verre d'eau
+fin tant que
+
+laver brosse à dents
+vider verre 
+laver verre

@@ -1,0 +1,22 @@
+Routes
+    /ganes
+        /games/id
+        /games?filter=best
+        /games/id/publisher/id
+        /publishers/id/games/id
+
+
+Objets
+    Game
+       id (int)
+       publisher (Objet)
+       category (Objet ?)
+       name (string)
+       releaseDate (date)
+       price (prix)
+       grade (note)
+
+Normes d'écriture
+    snake_case
+    camelCase
+    kebab-case
