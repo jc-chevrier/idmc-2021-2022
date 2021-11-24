@@ -1,9 +1,9 @@
-GET http://localhost:8080/publishers
+GET http://localhost:8081/publishers
 Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/publishers
+POST http://localhost:8081/publishers
 Content-Type: application/json
 
 {

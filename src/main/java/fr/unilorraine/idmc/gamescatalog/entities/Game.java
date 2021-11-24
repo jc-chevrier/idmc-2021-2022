@@ -13,7 +13,6 @@ import java.time.Instant;
 @Setter
 @NoArgsConstructor
 public class Game {
-
     @Nullable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
