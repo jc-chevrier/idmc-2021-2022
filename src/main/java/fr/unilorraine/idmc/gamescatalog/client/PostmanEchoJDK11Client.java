@@ -1,6 +1,9 @@
 package fr.unilorraine.idmc.gamescatalog.client;
 
+import fr.unilorraine.idmc.gamescatalog.config.PostmanProperties;
+import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Component;
 
 import java.net.URI;
@@ -9,12 +12,15 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 @Component
-public class PostmanEchoClient {
+@RequiredArgsConstructor
+public class PostmanEchoJDK11Client {
+    private final PostmanProperties postmanProperties;
+
     @SneakyThrows
     public String testGet() {
         var request = HttpRequest
                               .newBuilder()
-                              .uri(new URI("https://postman-echo.com/get"))
+                              .uri(new URI(postmanProperties.getEchoUrl()))
                               .GET()
                               .build();
         var response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());

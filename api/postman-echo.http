@@ -1,2 +1,6 @@
 ###
-GET http://localhost:8081/postman-echo/get
+GET http://localhost:8081/postman-echo/get/jdk11
+
+###
+
+GET http://localhost:8081/postman-echo/get/feign
