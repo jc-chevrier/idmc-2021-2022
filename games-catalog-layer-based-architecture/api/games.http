@@ -1,0 +1,16 @@
+GET http://localhost:8081/games
+Content-Type: application/json
+
+###
+
+POST http://localhost:8081/games
+Content-Type: application/json
+
+{
+  "name": "Quake III",
+  "price": 666,
+  "rating": 10,
+  "category": "shooter",
+  "releaseDate": "31-12-2021 13:42:00",
+  "publisherId": 1
+}

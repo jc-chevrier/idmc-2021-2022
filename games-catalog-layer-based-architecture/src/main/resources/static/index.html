@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Home
+        </title>
+    </head>
+    <body>
+        Home
+        <div id="postman-echo-get"></div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "http://localhost:8081/postman-echo/get/jdk11",//Pas propre.
+            data: {},
+            success: (json) =>  $("#postman-echo-get").text(json.toString())
+        });
+    </script>
+</html>
