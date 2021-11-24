@@ -17,6 +17,8 @@ import java.util.List;
 public class GamesController {
     private final GamesService gamesService;
 
+
+
     @GetMapping
     public List<GameView> findAll() {
         return gamesService.findAll();
