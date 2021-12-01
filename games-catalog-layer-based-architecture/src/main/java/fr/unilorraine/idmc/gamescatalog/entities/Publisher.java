@@ -7,12 +7,11 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "PUBLISHER", schema = "GAMESCATALOG")
+@Table(name = "publisher", schema = "gamescatalog")
 @Getter
 @Setter
 @NoArgsConstructor
 public class Publisher {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

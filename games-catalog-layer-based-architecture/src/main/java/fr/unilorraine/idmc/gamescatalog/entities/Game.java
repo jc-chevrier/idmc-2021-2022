@@ -9,26 +9,22 @@ import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "GAME", schema = "GAMESCATALOG")
+@Table(name = "game", schema = "gamescatalog")
 @Getter
 @Setter
 @NoArgsConstructor
 public class Game {
-
     @Nullable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
-
     private String name;
     private Long price;
     private int rating;
     private String category;
-
 //    https://stackoverflow.com/questions/32437550/whats-the-difference-between-instant-and-localdatetime
     private Instant releaseDate;
-
 //    https://vladmihalcea.com/manytoone-jpa-hibernate/
     @Nullable
     @ManyToOne
@@ -36,5 +32,4 @@ public class Game {
 //    https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#howto.data-access.configure-hibernate-naming-strategy
     @JoinColumn(name = "publisher_id", referencedColumnName = "id")
     private Publisher publisher;
-
 }
