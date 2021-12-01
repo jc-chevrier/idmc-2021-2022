@@ -9,10 +9,12 @@ import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
+@Table(name = "GAME", schema = "GAMESCATALOG")
 @Getter
 @Setter
 @NoArgsConstructor
 public class Game {
+
     @Nullable
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

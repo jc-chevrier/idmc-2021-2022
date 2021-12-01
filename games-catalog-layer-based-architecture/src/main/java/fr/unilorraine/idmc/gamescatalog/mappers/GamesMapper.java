@@ -26,9 +26,10 @@ public interface GamesMapper {
     GameView toDto(Game gg);
 
     default List<GameView> toDto(Iterable<Game> games) {
-        var gamesViews = new ArrayList<GameView>();
-        games.forEach(game -> gamesViews.add(toDto(game)));
-        return gamesViews;
+        var result = new ArrayList<GameView>();
+        games.forEach(game -> result.add(toDto(game)));
+
+        return result;
     }
 
 //    https://www.baeldung.com/mapstruct-ignore-unmapped-properties#ignore-specific-fields
