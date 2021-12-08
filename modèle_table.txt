@@ -1,0 +1,15 @@
+Table
+	Attribut(s) : 
+		n pied(s)
+		n surface(s) au dessus des pieds et à hauteur correcte des humains
+	Opération(s) :
+		déplacer
+
+TablePiable hérite de Table
+	Opération(s) :
+     		plier
+		déplier
+
+TableAvecRoues hérite de Table
+	Opérations(s) :
+		rouler
